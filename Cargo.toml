@@ -1,0 +1,13 @@
+[package]
+name = "sv_raid_reader_gui"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+eframe = "0.19.0"
+egui_extras = "0.19.0"
+sv_raid_reader = { git = "https://github.com/SteveCookTU/sv_raid_reader", rev = "3e0789b" }
+sysbot_rs = { git = "https://github.com/SteveCookTU/sysbot_rs.git", rev = "dc9fe68" }
+image = "0.24.5"
