@@ -1,5 +1,3 @@
-#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
-
 use eframe::{IconData, Renderer};
 use sv_raid_reader_gui::app::SVRaidReader;
 
