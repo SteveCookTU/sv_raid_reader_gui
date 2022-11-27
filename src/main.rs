@@ -1,11 +1,16 @@
+#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
+
 use eframe::IconData;
 use sv_raid_reader_gui::app::SVRaidReader;
 
 const ICON_RAW: &[u8] = include_bytes!("../compass_icon.png");
 
 fn main() {
+    tracing_subscriber::fmt::init();
+
     let native_options = eframe::NativeOptions {
         icon_data: Some(load_icon()),
+        vsync: false,
         ..Default::default()
     };
     eframe::run_native(
