@@ -1,6 +1,9 @@
 #![allow(clippy::from_over_into)]
 
-use sv_raid_reader::{Filter, GameProgress, GameVersion, Raid, ABILITIES, AREAS, GENDER_SYMBOLS, NATURES, SPECIES, TYPES, personal_table, PersonalInfo};
+use sv_raid_reader::{
+    personal_table, Filter, GameProgress, GameVersion, PersonalInfo, Raid, ABILITIES, AREAS,
+    GENDER_SYMBOLS, NATURES, SPECIES, TYPES,
+};
 
 pub mod app;
 mod draw;
@@ -172,7 +175,6 @@ struct RaidResult {
 
 impl Into<RaidResult> for Raid {
     fn into(self) -> RaidResult {
-
         let personal = personal_table::SV.get_form_entry(self.species as usize, self.form as usize);
         let ability = personal
             .get_ability_index((self.pokemon.ability - 1) as usize)
