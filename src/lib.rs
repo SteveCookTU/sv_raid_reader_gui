@@ -8,7 +8,7 @@ use sv_raid_reader::{
 pub mod app;
 mod draw;
 
-const EVENT_FLATBUFFER_POINTER: [u64; 6] = [0x42DA820, 0x30, 0x388, 0x300, 0x28, 0x414];
+const EVENT_FLATBUFFER_POINTER: [u64; 7] = [0x4384A50, 0x30, 0x288, 0x290, 0x280, 0x28, 0x414];
 
 #[derive(Copy, Clone, Ord, PartialOrd, Eq, PartialEq, Default)]
 #[repr(u8)]
