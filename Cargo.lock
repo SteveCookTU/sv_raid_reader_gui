@@ -1960,7 +1960,7 @@ checksum = "73473c0e59e6d5812c5dfe2a064a6444949f089e20eec9a2e5506596494e4623"
 [[package]]
 name = "sv_raid_reader"
 version = "0.1.0"
-source = "git+https://github.com/SteveCookTU/sv_raid_reader?rev=8c6567d#8c6567d39fa9c6e2f9280f07b4ec57a1420ff1b0"
+source = "git+https://github.com/SteveCookTU/sv_raid_reader?rev=5066bc5#5066bc556dc8139c4f97863bd795700d576fc73e"
 dependencies = [
  "flatbuffers",
  "lazy_static",
