@@ -111,7 +111,7 @@ jobs:
           override: true
 
       - name: Build & Package
-        run: cargo build --all --release && if exist target/release/sv-raid-reader-gui.exe del target/release/sv-raid-reader-gui.exe && mv target/release/sv_raid_reader_gui.exe target/release/sv-raid-reader-gui.exe -force && 7z a -tzip ${{ runner.OS }}.zip ./target/release/sv-raid-reader-gui.exe
+        run: cargo build --all --release && del target/release/sv-raid-reader-gui.exe 2>nul && mv target/release/sv_raid_reader_gui.exe target/release/sv-raid-reader-gui.exe -force && 7z a -tzip Windows.zip ./target/release/sv-raid-reader-gui.exe
 
       - name: Upload binaries to release
         uses: softprops/action-gh-release@v1
